@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas - Dio.me</title>
+    <style>
+        table {
+           -webkit-box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+           box-shadow: 12px 14px 6px 5px rgba(0, 0, 0, 0.24); 
+        }
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+        table tfoot td{
+            background-color: lightgray;
+        }
+        table tr:nth-child(even) {
+            background-color: burlywood;
+        }
+        table tr:hover td {
+            background-color: darkgrey;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table summary="Uma tabela" border="1" width="250" cellspacing="1" cellpadding="1" align="center">
+        <caption>Tabela de idades dos alunos Dio.me</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Minha tabela</th>
+            </tr>
+            <tr>
+                <th title="Nome completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr id="1">
+                 <td>Gabriel</td>
+                 <td>25</td>
+            </tr>
+             <tr id="2">
+                 <td>Maria</td>
+                 <td>34</td>
+            </tr>
+            <tr id="3">
+                <td>João</td>
+                <td>32</td>
+            </tr>
+            <tr id="4">
+                <td>Walter</td>
+                <td>24</td>
+            </tr>
+            <tr id="5">
+                <td>Manoela</td>
+                <td>28</td>
+            </tr>
+            <tr id="6">
+                <td>Michele</td>
+                <td>26</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
