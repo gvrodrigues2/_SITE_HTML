@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        .row {
+            margin:5px;
+        }
+        label {
+            width:100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset {
+            margin: 20px 0;
+            border-radius: 10px;
+            border-color: brown;
+        }
+        .botoes {
+            text-align: center; /* Alinha os botões à direita */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li><a href="site_clinica.html">Página Principal</a></li>
+                <li><a href="sobre_clinica.html">Sobre</a></li>
+                <li><a href="horarios_clinica.html">Horários</a></li>
+                <li><a href="contato_clinica.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img width="450" height="130" src="data:image/jpeg;base64,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">
+            </div>
+    
+            <div class="content">
+                <h1>Informações de Contato</h1>
+                <ul>
+                    <li><u>Telefones:</u> (88) 3322-5678 / 3529-7482 / <u>Whatsapp:</u> (88) 9.9857-6342</li>
+                    <li>Av. Nelson Silva 1, 15 - Abaíra, BA</li> <br>
+                    <br>
+                    <iframe width="500" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1941.8036332598515!2d-41.6674997613956!3d-13.249945585963527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x743b9e92967257b%3A0x3c464ac13054ce6c!2sAv.%20Nelson%20Silva%201%20-%20Aba%C3%ADra%2C%20BA%2C%2046690-000!5e0!3m2!1spt-BR!2sbr!4v1696634522337!5m2!1spt-BR!2sbr"></iframe>
+                    <form>
+                        <fieldset>
+                            <legend>Formulário para Contato</legend>
+                            <div class="row">
+                                <label>Nome:</label><input type="text" />
+                                <label>E-mail:</label><input type="email" />
+                            </div>
+                            <div class="row">
+                                <label>Assunto:</label><input type="text" />
+                            </div>
+                            <div class="row">
+                                <label>Mensagem: </label>
+                                <textarea rows="10" cols="50" name="message"></textarea>
+                                <div class="row botoes">
+                                    <button type="reset">
+                                        Limpar
+                                    </button>
+                                    <button type="submit">
+                                        Enviar formulário
+                                    </button>
+                                </div>
+                                
+                        </fieldset>
+                    </form>
+                </ul>
+            </div>
+    
+            <div class="footer">
+                <h3><strong>Informações de Contato da +Saúde</strong></h3>
+                
+                <strong><u>Endereço:</u></strong>
+                Rua: Av. Nelson Silva 1, 15 - Abaíra, BA Cep: 46690-000 <br>
+                Telefone: (88) 3322-5678 / 3529-7482 <br>
+                E-mail: +saúde@email.com <br>
+                
+                <strong><u>Horário de Funcionamento:</u></strong> <br>
+                Segunda a Sexta: 07h ás 18h <br>
+                Sábado: 08h ás 13h <br>
+                Domingo: Fechado <br>
+                
+                <blockquote>Fique à vontade para nos ligar ou nos enviar um e-mail a qualquer momento. 
+                Estamos aqui para cuidar da sua saúde e bem-estar. Esperamos vê-lo em breve na +Saúde</blockquote>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
